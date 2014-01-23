@@ -1,0 +1,24 @@
+ChangeList
+Version 0.3
+* Added pyCLIPS dependence
+* Added AST based translation rules
+* replaced xend with 0
+* fixed simple conversion of a*b -> a*b when a or b is a scalar would default to dot(a,b)
+* xend now replaced with zero so that 
+    x(a:end-1) -> x[a:(0-1)] or x[a:-1] and x(a:end-b) -> x[a:0-b-1]
+    x(end) -> x[end-1] 
+  this may fail with some expression such as
+  x(a:end+b)
+* rules for using parentheses was wrong to do reversed priority of python operators
+* using hstack and vstack rather than c_ and r_ notation.
+
+
+Version 0.2
+* Fixed elif statement
+* fixed simple command expressions
+* removed verbose printing
+* added basic tests
+
+version 0.1
+Initial Version
+
