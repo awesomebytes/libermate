@@ -21,7 +21,19 @@ git clone https://github.com/awesomebytes/libermate.git
 
 ===Setup===
 
-No setup needed, just enter the folder libermate
+Libermate needs pyclips
+http://pyclips.sourceforge.net/web/ --> http://sourceforge.net/projects/pyclips/files/pyclips/pyclips-1.0/
+
+Download pyclips-1.0.7.348.tar.gz
+
+Extract and install (there is a README if you have doubts)
+```
+tar -zxvf pyclips-1.0.7.348.tar.gz
+cd pyclibs
+sudo python setup.py build
+sudo python setup.py install
+```
+
 
 ===Run===
 
