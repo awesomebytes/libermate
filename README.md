@@ -15,11 +15,13 @@ Check notes_on_using_libermate.txt if you use it and it doesn't work properly (i
 
 LiberMate - A MATLAB to Python (SciPy/NumPy) Translator 
 
+```
 git clone https://github.com/awesomebytes/libermate.git
+```
 
 ===Setup===
 
-cd libermate
+No setup needed, just enter the folder libermate
 
 ===Run===
 
@@ -36,14 +38,15 @@ To convert a single test file type
 $ python libermate.py Tests/colon.m
 
 and will print the following output
---------------------
+
+```
 Opening File Tests/colon.m
 Starting Parser
 Parser Complete
 Starting Translator
 Translation Complete
 writing to file Tests/colon.py
-
+```
 
 To convert all test files type
 
@@ -53,7 +56,7 @@ To output Abstract Syntax Tree from colon.m
 
 $ python libermate.py --astdump Tests/colon.m
 
---------------------
+```
 Opening File Tests/colon.m
 Starting Parser
 Parser Complete
@@ -61,6 +64,7 @@ writing to file Tests/colon.ast
 Starting Translator
 Translation Complete
 writing to file Tests/colon.py
+```
 
 This will create a file called Tests/colon.ast which contains the AST for the parsed file. The AST file can be useful to track where the Parser may have had problems.
 
@@ -86,7 +90,7 @@ be written to python files, of the same name but ending with .py.
 
 $ ./libermate.py Tests/matrix_tests.m
 
---------------------
+```
 Opening File Tests/matrix_tests.m
 Starting Parser
 syntax error: unexpected symbol at line 10 (column 4): "
@@ -97,6 +101,7 @@ Starting Translator
 error: unexpected end of subtree
 Translation Complete
 writing to file Tests/matrix_tests.py
+```
 
 The output shows two errors on lines 10 and 11 that are cause by an initial newline and final newline in matrix expression for variable d.
 
