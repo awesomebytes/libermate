@@ -7,6 +7,10 @@ All credit goes to Eric C. Schug for this incredible work.
 
 Check notes_on_using_libermate.txt if you use it and it doesn't work properly (it's normal!) I give many hints there on how to correct problems I had while translating https://github.com/awesomebytes/parametric_modeling
 
+You may want to try the new: https://github.com/victorlei/smop
+It's a work in progress, which means, someone is working on it! This one is just as it is.
+
+
 =========
 
 (Almost) Original README from http://sourceforge.net/p/libermate/code/HEAD/tree/
