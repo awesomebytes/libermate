@@ -1,3 +1,10 @@
+# DEPRECATED
+Use https://github.com/victorlei/smop instead.
+
+
+
+
+
 libermate
 =========
 
